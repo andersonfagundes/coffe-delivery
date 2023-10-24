@@ -8,14 +8,36 @@ export const HeaderContainer = styled.header`
   height: 6.5rem;
 
   .logo-coffe-delivery {
-    width: 84.95px;
-    height: 40px;
-    margin: 2rem 0 2rem 10rem;
+    width: 5.3rem;
+    height: 2.5rem;
+    margin: 2rem 0 2rem 16rem;
   }
 
   .location-cart {
     width: 193px;
     height: 38px;
     margin: 2rem 16rem 2rem 0;
+  }
+
+  /*Media query for resolution phones*/
+  @media (max-width: 480px) {
+    .logo-coffe-delivery {
+      margin: 2rem 0 2rem 1rem;
+    }
+
+    .location-cart {
+      margin: 2rem 1rem 2rem 0rem;
+    }
+  }
+
+  /*Media query for tablets ipads partrait mode*/
+  @media (min-width: 481px) and (max-width: 1024px) {
+    .logo-coffe-delivery {
+      margin: 2rem 5rem 1rem;
+    }
+
+    .location-cart {
+      margin: 2rem 5rem 2rem 0rem;
+    }
   }
 `
