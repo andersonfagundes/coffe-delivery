@@ -1,13 +1,27 @@
-import { MainContainer } from './styles'
+import {
+  CoffeDeliveryInfo,
+  CoffeImageContainer,
+  CoffeeFinder,
+  MainContainer,
+  MainInformation,
+} from './styles'
 import coffeMainImage from '../../assets/coffe-main-image.svg'
 
 export function Home() {
   return (
     <MainContainer>
-      <div className="div_main_information">Test 1</div>
-      <div className="div_img_coffe">
+      <MainInformation>
+        <CoffeeFinder>
+          Encontre o café perfeito para qualquer hora do dia
+        </CoffeeFinder>
+        <CoffeDeliveryInfo>
+          Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
+          hora
+        </CoffeDeliveryInfo>
+      </MainInformation>
+      <CoffeImageContainer>
         <img src={coffeMainImage} alt="" />
-      </div>
+      </CoffeImageContainer>
     </MainContainer>
   )
 }

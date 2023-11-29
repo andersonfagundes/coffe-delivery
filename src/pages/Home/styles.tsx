@@ -5,35 +5,34 @@ export const MainContainer = styled.main`
   flex-direction: row;
   justify-content: space-between;
   border: 1px solid red;
+`
 
-  .div_main_information {
-    width: 36.75rem;
-    height: 21.37rem;
-    margin: 5.87rem 3.5rem 6.75rem 16rem;
-    border: 1px solid blue;
-  }
-  .div_img_coffe {
-    width: 29.75rem;
-    height: 22.5rem;
-    margin: 5.75rem 16rem 5.75rem 0;
-  }
+export const MainInformation = styled.div`
+  width: 36.75rem;
+  height: 12rem;
+  margin: 94px 0px 108px 160px;
+  border: 1px solid blue;
+`
 
-  @media (max-width: 480px) {
-    .div_main_information {
-      margin-left: 1rem;
-    }
-    .div_img_coffe {
-      margin-right: 1rem;
-    }
-  }
+export const CoffeeFinder = styled.div`
+  width: 36.75rem;
+  height: 7.75rem;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 3rem;
+  line-height: 130%;
+`
 
-  /*Media query for tablets ipads partrait mode*/
-  @media (min-width: 481px) and (max-width: 1024px) {
-    .div_main_information {
-      margin-left: 1rem;
-    }
-    .div_img_coffe {
-      margin-right: 1rem;
-    }
-  }
+export const CoffeDeliveryInfo = styled.div`
+  width: 36.75rem;
+  height: 3.25rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.25rem;
+  line-height: 130%;
+  margin-top: 16px;
+`
+export const CoffeImageContainer = styled.div`
+  width: 29.75rem;
+  height: 22.5rem;
+  margin: 92px 160px 92px 56px;
+  border: 1px solid green;
 `
