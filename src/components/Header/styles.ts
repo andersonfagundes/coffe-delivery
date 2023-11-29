@@ -7,37 +7,15 @@ export const HeaderContainer = styled.header`
   width: 100%;
   height: 6.5rem;
 
-  .logo-coffe-delivery {
+  .coffe-delivery-logo {
     width: 5.3rem;
     height: 2.5rem;
-    margin: 2rem 0 2rem 16rem;
+    margin: 32px 0px 32px 160px;
   }
 
   .location-cart {
     width: 193px;
     height: 38px;
-    margin: 2rem 16rem 2rem 0;
-  }
-
-  /*Media query for resolution phones*/
-  @media (max-width: 480px) {
-    .logo-coffe-delivery {
-      margin: 2rem 0 2rem 1rem;
-    }
-
-    .location-cart {
-      margin: 2rem 1rem 2rem 0rem;
-    }
-  }
-
-  /*Media query for tablets ipads partrait mode*/
-  @media (min-width: 481px) and (max-width: 1024px) {
-    .logo-coffe-delivery {
-      margin: 2rem 5rem 1rem;
-    }
-
-    .location-cart {
-      margin: 2rem 5rem 2rem 0rem;
-    }
+    margin: 33px 160px 33px 0px;
   }
 `
