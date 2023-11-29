@@ -4,14 +4,12 @@ export const MainContainer = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 1px solid red;
 `
 
 export const MainInformation = styled.div`
   width: 36.75rem;
   height: 12rem;
   margin: 94px 0px 108px 160px;
-  border: 1px solid blue;
 `
 
 export const CoffeeFinder = styled.div`
@@ -34,5 +32,4 @@ export const CoffeImageContainer = styled.div`
   width: 29.75rem;
   height: 22.5rem;
   margin: 92px 160px 92px 56px;
-  border: 1px solid green;
 `
