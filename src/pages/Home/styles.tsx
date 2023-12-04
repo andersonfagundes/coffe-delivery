@@ -5,6 +5,7 @@ export const MainContainer = styled.main`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
   background-image: url(${backgroundImageMainInformation});
 `
 
@@ -65,4 +66,14 @@ export const CoffeImageContainer = styled.div`
   margin: 92px 160px 92px 56px;
   width: 29.75rem;
   height: 22.5rem;
+`
+export const List = styled.div`
+  width: 100%;
+
+  h2 {
+    font-family: 'Baloo 2', sans-serif;
+    font-size: 2rem;
+    line-height: 130%;
+    margin: 32px 0px 0px 160px;
+  }
 `
