@@ -1,11 +1,12 @@
 import {
-  CoffeDeliveryInfo,
-  CoffeImageContainer,
-  CoffeInformation,
+  CoffeeDeliveryInfo,
+  CoffeeImageContainer,
+  CoffeeInformation,
   CoffeeFinder,
   MainContainer,
-  MainInformation,
+  Information,
   PurchaseAssurance,
+  MainInformationContainer,
 } from './styles'
 import coffeMainImage from '../../assets/coffe-main-image.svg'
 import iconSimpleSafePurchase from '../../assets/icon-simple-and-safe-purchase.svg'
@@ -18,42 +19,44 @@ export function Home() {
   return (
     <>
       <MainContainer>
-        <MainInformation>
-          <CoffeInformation>
-            <CoffeeFinder>
-              Find the perfect coffee for any time of day
-            </CoffeeFinder>
-            <CoffeDeliveryInfo>
-              With Coffee Delivery you receive your coffee wherever you are,
-              anytime hour
-            </CoffeDeliveryInfo>
-            <PurchaseAssurance>
-              <ul>
-                <li>
-                  <img src={iconSimpleSafePurchase} alt="" />
-                  Simple and safe purchase
-                </li>
-                <li>
-                  <img src={iconKeepingIntactCoffe} alt="" />
-                  Packaging keeps the coffee intact
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <img src={iconFastAndTrackedDelivery} alt="" />
-                  Fast and tracked delivery
-                </li>
-                <li>
-                  <img src={iconCoffeArrivesFreshToYou} alt="" />
-                  Coffee arrives fresh to you
-                </li>
-              </ul>
-            </PurchaseAssurance>
-          </CoffeInformation>
-        </MainInformation>
-        <CoffeImageContainer>
-          <img src={coffeMainImage} alt="" />
-        </CoffeImageContainer>
+        <MainInformationContainer>
+          <Information>
+            <CoffeeInformation>
+              <CoffeeFinder>
+                Find the perfect coffee for any time of day
+              </CoffeeFinder>
+              <CoffeeDeliveryInfo>
+                With Coffee Delivery you receive your coffee wherever you are,
+                anytime hour
+              </CoffeeDeliveryInfo>
+              <PurchaseAssurance>
+                <ul>
+                  <li>
+                    <img src={iconSimpleSafePurchase} alt="" />
+                    Simple and safe purchase
+                  </li>
+                  <li>
+                    <img src={iconKeepingIntactCoffe} alt="" />
+                    Packaging keeps the coffee intact
+                  </li>
+                </ul>
+                <ul>
+                  <li>
+                    <img src={iconFastAndTrackedDelivery} alt="" />
+                    Fast and tracked delivery
+                  </li>
+                  <li>
+                    <img src={iconCoffeArrivesFreshToYou} alt="" />
+                    Coffee arrives fresh to you
+                  </li>
+                </ul>
+              </PurchaseAssurance>
+            </CoffeeInformation>
+          </Information>
+          <CoffeeImageContainer>
+            <img src={coffeMainImage} alt="" />
+          </CoffeeImageContainer>
+        </MainInformationContainer>
       </MainContainer>
       <CoffeeList />
     </>
