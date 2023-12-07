@@ -1,26 +1,35 @@
 import styled from 'styled-components'
 
-export const CoffeeListContainer = styled.div`
-  width: 100%;
+export const ListContainer = styled.div`
   display: flex;
+  align-items: center;
   flex-direction: column;
-  justify-content: center;
+  width: 100%;
+`
+export const OurCoffees = styled.div`
+  width: 70rem;
+  margin-top: 32px;
+  margin-bottom: 54px;
+
   h2 {
     font-family: 'Baloo 2', sans-serif;
     font-size: 2rem;
     line-height: 130%;
-    margin: 32px 0px 0px 160px;
   }
 `
+
 export const List = styled.div`
-  width: 70rem;
-  margin: 54px 0px 0px 160px;
   display: flex;
+  justify-content: space-between;
   flex-direction: row;
-  gap: 2rem;
+  flex-wrap: nowrap;
+  width: 70rem;
+  border: 1px solid pink;
+  width: 70rem;
 `
 
 export const CoffeeCard = styled.div`
   width: 16rem;
   height: 19.37rem;
+  border: 1px solid green;
 `
