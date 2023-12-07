@@ -27,9 +27,3 @@ export const List = styled.div`
   border: 1px solid pink;
   width: 70rem;
 `
-
-export const CoffeeCard = styled.div`
-  width: 16rem;
-  height: 19.37rem;
-  border: 1px solid green;
-`
