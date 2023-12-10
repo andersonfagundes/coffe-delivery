@@ -24,6 +24,5 @@ export const List = styled.div`
   flex-direction: row;
   flex-wrap: nowrap;
   width: 70rem;
-  border: 1px solid pink;
   width: 70rem;
 `

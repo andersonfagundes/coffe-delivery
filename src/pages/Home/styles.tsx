@@ -48,9 +48,9 @@ export const PurchaseAssurance = styled.div`
   width: 35.43rem;
   height: 5.25rem;
   font-family: 'Roboto', sans-serif;
+  color: ${(props) => props.theme['base-text']};
   font-size: 1rem;
   line-height: 130%;
-  color: ${(props) => props.theme['base-text']};
 
   ul {
     display: flex;

@@ -1,5 +1,9 @@
 import { CoffeeCardContainer } from './styles'
 
-export function CoffeeCard() {
-  return <CoffeeCardContainer />
+interface CoffeeCardProps {
+  children: React.ReactNode
+}
+
+export function CoffeeCard({ children }: CoffeeCardProps) {
+  return <CoffeeCardContainer>{children}</CoffeeCardContainer>
 }
