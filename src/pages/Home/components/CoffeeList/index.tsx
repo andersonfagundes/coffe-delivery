@@ -5,7 +5,15 @@ import {
   AmountDetailsContainer,
   PriceContainer,
   Price,
+  AmountContainer,
+  Cart,
+  Amount,
+  NegativeSymbolContainer,
+  PositiveSymbolContainer,
 } from '../CoffeeCard/styles'
+import cart from '../../../../assets/cart.svg'
+import negativeSymbol from '../../../../assets/icon-negative-symbol.svg'
+import positiveSymbol from '../../../../assets/icon-positive-symbol.svg'
 
 export function CoffeeList() {
   return (
@@ -23,6 +31,20 @@ export function CoffeeList() {
             <PriceContainer>
               R$<Price>9,90</Price>
             </PriceContainer>
+            <AmountContainer>
+              <Amount>
+                <NegativeSymbolContainer>
+                  <img src={negativeSymbol} alt="" />
+                </NegativeSymbolContainer>
+                <input type="text" value="1" />
+                <PositiveSymbolContainer>
+                  <img src={positiveSymbol} alt="" />
+                </PositiveSymbolContainer>
+              </Amount>
+              <Cart>
+                <img src={cart} alt="" />
+              </Cart>
+            </AmountContainer>
           </AmountDetailsContainer>
         </CoffeeCard>
       </List>

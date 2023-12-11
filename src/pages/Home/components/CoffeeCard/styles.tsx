@@ -18,7 +18,8 @@ export const CoffeeCardContainer = styled.div`
   span {
     font-family: 'Roboto', sans-serif;
     font-size: 0.62rem;
-    font-weight: bold;
+    font-weight: 700;
+    text-align: center;
     background: ${(props) => props.theme['yellow-light']};
     color: ${(props) => props.theme['yellow-dark']};
     line-height: 150%;
@@ -31,12 +32,12 @@ export const CoffeeCardContainer = styled.div`
 
   h3 {
     font-family: 'Baloo 2', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
     color: ${(props) => props.theme['base-subtitle']};
     margin-top: 16px;
-    font-size: 14px;
-    text-align: center;
-    line-height: 130%;
-    font-weight: bold;
   }
 
   p {
@@ -53,6 +54,8 @@ export const CoffeeCardContainer = styled.div`
 `
 
 export const AmountDetailsContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
   width: 13rem;
   height: 2.37rem;
   margin: 33px 24px 20px 24px;
@@ -79,4 +82,77 @@ export const Price = styled.div`
   text-align: right;
 `
 
-export const Amount = styled.div``
+export const AmountContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 7.37rem;
+  height: 2.37rem;
+`
+
+export const Amount = styled.div`
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 4.5rem;
+  height: 2.37rem;
+  background: ${(props) => props.theme['base-button']};
+  border-radius: 6px;
+
+  input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400 700;
+    line-height: 130%;
+    text-align: center;
+    width: 1.25rem;
+    height: 1.31rem;
+    border: none;
+    outline: none;
+    background: ${(props) => props.theme['base-button']};
+  }
+`
+
+export const NegativeSymbolContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.87rem;
+  height: 0.87rem;
+
+  img {
+    width: 0.68rem;
+    height: 1rem;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+`
+
+export const PositiveSymbolContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.87rem;
+  height: 0.87rem;
+
+  img {
+    cursor: pointer;
+    margin: 0 auto;
+  }
+`
+
+export const Cart = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.37rem;
+  height: 2.37rem;
+  background: ${(props) => props.theme['purple-dark']};
+  border-radius: 6px;
+  cursor: pointer;
+
+  img {
+    width: 1.37rem;
+    height: 1.37rem;
+    margin: 0 auto;
+  }
+`
