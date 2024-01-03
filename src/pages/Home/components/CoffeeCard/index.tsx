@@ -1,3 +1,5 @@
+import React from 'react'
+import PropTypes from 'prop-types'
 import { CoffeeCardContainer } from './styles'
 import tradicionalEspresso from '../../../../assets/traditional-espresso.svg'
 import {
@@ -15,7 +17,7 @@ import negativeSymbol from '../../../../assets/icon-negative-symbol.svg'
 import positiveSymbol from '../../../../assets/icon-positive-symbol.svg'
 
 interface CoffeeCardProps {
-  typeOfCoffee: string
+  typeOfCoffee: PropTypes.array.isRequired
   name: string
   marginLeft?: string
   description: string
@@ -29,7 +31,7 @@ export function CoffeeCard({
   return (
     <CoffeeCardContainer style={{ marginLeft }}>
       <img src={tradicionalEspresso} alt="" />
-      <span>{typeOfCoffee}</span>
+      <div className="type-of-coffee">{typeOfCoffee}</div>
       <h3>{name}</h3>
       <p>{description}</p>
       <AmountDetailsContainer>

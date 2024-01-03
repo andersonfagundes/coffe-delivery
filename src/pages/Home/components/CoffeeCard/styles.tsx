@@ -16,6 +16,10 @@ export const CoffeeCardContainer = styled.div`
     margin: -20px auto 0 auto;
   }
 
+  .type-of-coffee {
+    /* border: 1px solid green; */
+  }
+
   span {
     font-family: 'Roboto', sans-serif;
     font-size: 0.62rem;

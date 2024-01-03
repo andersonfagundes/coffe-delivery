@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const CoffeeType = styled.span`
+export const SpanCoffeeType = styled.span`
   font-family: 'Roboto', sans-serif;
   font-size: 0.62rem;
   font-weight: 700;
