@@ -20,9 +20,10 @@ export const OurCoffees = styled.div`
 
 export const List = styled.div`
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-start;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   width: 70rem;
   width: 70rem;
 `

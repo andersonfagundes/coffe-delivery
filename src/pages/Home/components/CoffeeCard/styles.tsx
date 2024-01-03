@@ -9,6 +9,7 @@ export const CoffeeCardContainer = styled.div`
   height: 19.37rem;
   border-radius: 6px 36px 6px 36px;
   background: ${(props) => props.theme['base-card']};
+  margin-bottom: 40px;
 
   img {
     width: 7.5rem;
