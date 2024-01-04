@@ -1,5 +1,3 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import { CoffeeCardContainer } from './styles'
 import tradicionalEspresso from '../../../../assets/traditional-espresso.svg'
 import {
@@ -17,7 +15,7 @@ import negativeSymbol from '../../../../assets/icon-negative-symbol.svg'
 import positiveSymbol from '../../../../assets/icon-positive-symbol.svg'
 
 interface CoffeeCardProps {
-  typeOfCoffee: PropTypes.array.isRequired
+  typeOfCoffee: []
   name: string
   marginLeft?: string
   description: string
